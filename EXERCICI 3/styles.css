@@ -1,0 +1,122 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+/* HEADER LAYOUT */
+
+header{
+    background-color: #000;
+    display:flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background-color:#343f56;
+        display: flex;
+        flex-flow:row nowrap;
+    }
+        .logo{
+            width: 110px;
+            flex: 1 1 auto;
+        }
+        .navegacion{
+            background-color: #e84545;
+            flex: 5 1 auto;
+        }
+        .social{
+            background-color: #e84545;
+            flex: 1 1 auto;
+        }
+    .imagen{
+        background-color: #f48b29;
+    }
+        .texto-imagen{
+            background-color: #f0c929;
+        }
+/*SECCION*/
+
+section{
+    background-color: #000;
+    display: flex;
+}
+    .article{
+        background-color:#343f56;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .articulo1{
+            background-color: #28527a;
+            flex: 1 1 40%;
+        }
+        .articulo2{
+            background-color: #28527a;
+            flex: 1 1 40%;
+        }
+        .articulo3{
+            background-color: #28527a;
+            flex: 1 1 40%;
+        }
+        .articulo4{
+            background-color: #28527a;
+            flex: 1 1 40%;
+        }
+        .articulo5{
+            background-color: #8ac4d0;
+            flex: 1 1 100%;
+        }
+    aside{
+        background-color: #e84545;
+        flex: 1 1 auto;
+    }
+        .aside1{
+            background-color: #f0c929;
+        }
+        .aside2{
+            background-color: #f0c929;
+        }
+
+/*FOOTER*/
+
+footer{
+    background-color: #000;
+}
+    .copyright{
+        background-color: #f0c929;
+    }
+
+/* EXERCICI 2 - versió TAULETA*/
+
+@media all and (max-width: 800px){
+    section{
+        flex-direction: column;
+        background-color: #fff600;
+    }
+}
+
+/* EXERCICI 2 - versió MÒBIL*/
+
+@media all and (max-width: 500px){
+    .article{
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+
+    }
+    .articulo1, .articulo2, .articulo3, .articulo4 {
+        background-color: #387c6d;
+    }
+    .articulo5{
+        background-color: #9ddfd3;
+    }
+    .menu{
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+    }
+}

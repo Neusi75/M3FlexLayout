@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
+}
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    margin: auto;
+}
+
+/* HEADER LAYOUT */
+
+header{
+    background: url("img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: contain;*/
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+    /*height: 380px;*/
+    
+}
+    .menu{
+        /*background-color:#343f56;*/
+        
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        display: flex;
+        list-style: none;
+        margin-bottom: 15px;
+    }
+        .logo{
+            /*background-color: #e84545;*/
+            
+            align-self: flex-start;    
+            margin: 15px 0px;
+        }
+            .nav-brand{
+            width: 90px;
+        }
+       
+        .navegacion{
+            /*background-color: #e84545;*/
+            flex: 5 1 auto;
+            display: flex;  
+            flex-flow:row nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 12px;
+            color: rgb(116, 109, 111);
+            margin: 15px 0px;
+            padding: 10px;
+        }
+        .navegacion a{
+            color: rgb(116, 109, 111);
+            text-decoration: none;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            padding: 10px;  
+            
+          }
+          .navegacion i{
+              padding: 8px;
+          } 
+          .navegacion li {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            }
+            .navegacion a:hover {
+                background: #ccc;
+                /*border-bottom: 1px solid rgb(116, 109, 111);
+                text-decoration: none;*/
+               }
+        
+        .social{
+            /*background-color: #e84545;*/
+            
+            display: flex;  
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            align-items: flex-start;
+            margin: 15px 0px;
+            flex: 18%;
+            
+        }
+        .social i{
+            color: rgb(116, 109, 111);
+            flex: 0 1 auto;
+            font-size: 14px;
+            padding: 10px;
+        }
+    .imagen{
+        display: flex;
+        background-color: #b4b3b245;
+        opacity: 90%;
+        width: 80%; 
+        align-self: center;
+        margin-bottom: 15px;
+      
+
+    }
+        h1{
+            color: #e84545;
+            opacity: 70%;
+            text-align: center;
+            padding: 20px;
+            margin: 25px 10px;
+            flex: auto;
+        }
+/*SECCION*/
+
+section{
+    display: flex;
+    flex: 7;
+    width: 90%;
+    margin: 15px auto ;
+}
+    .article{
+        background-color: #b5b3b1b7;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .article img{
+        width: 98%;
+        position: relative;
+        align-self: center;
+        margin-left: 4px;
+        margin-top: 4px;
+        
+        
+    }
+        .articulo1, .articulo2, .articulo3, .articulo4{
+            background-color: #b5b3b14c;
+            flex: 1 1 40%;
+            padding: 3px;
+            margin: 15px;
+            position: relative;
+            align-self: center;
+            
+        }
+        .fondo-titulo {
+            display: flex;
+            background-color: #e84545; 
+            height: 35px;
+            width: 98%;
+            margin-top: -7px;
+            margin-left: 4px;
+            padding-top: 10px;
+            
+        }
+        h2 {
+            
+            color: white;  
+            margin-top: 12px; 
+            font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+            margin-left: 10px;   
+        }
+        h2:hover {
+            color: #ccc;
+            cursor: pointer;
+        }
+        .fecha {
+            font-size: 20px;
+            color: #fbf9f9;
+            margin-top: -24px;
+            position: absolute;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 14px;
+
+        }
+        article p{
+            margin-left: 10px;
+            margin-top: 5px;
+
+        }
+        article a{
+            color:white;
+            margin-left: 10px;
+        }
+        article a:hover{
+            color:#ccc
+        }
+    aside{
+        /*background-color: #e84545;*/
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        width: 95%;
+        align-content: center;
+        padding: 0px;
+        background-color: #f0c929;
+        height: 900px;
+        margin-left: 10px;
+    
+        
+        
+    }
+    .aside1, .aside2 {
+        padding: 15px;
+        margin-left: auto;
+        position: relative;
+        
+    }
+    aside img{
+        width: 100%;
+        position: relative;
+
+    }
+    aside p{
+        text-align: center;
+    }
+        
+
+/*FOOTER*/
+
+footer{
+    
+    width: 90%;
+    height: 20px;
+    background-color: #000;
+    margin: 15px auto ;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    
+    
+    
+    
+}
+    
+        
+    
+
+/* versió TAULETA*/
+
+@media all and (max-width: 800px){
+    section{
+        flex-direction: column;
+        background-color: #b5b3b1b7;
+        
+    }
+    aside {
+        flex-direction: row;
+        margin-top: 15px;
+    }
+}
+
+/* EXERCICI 2 - versió MÒBIL*/
+
+@media all and (max-width: 500px){
+    .article{
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+
+    }
+    .articulo1, .articulo2, .articulo3, .articulo4 {
+        background-color: #387c6d;
+    }
+    .articulo5{
+        background-color: #9ddfd3;
+    }
+    .menu{
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+    }
+}
